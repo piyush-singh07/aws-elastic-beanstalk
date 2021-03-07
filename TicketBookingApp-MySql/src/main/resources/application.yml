@@ -1,0 +1,13 @@
+server:
+  servlet:    context-path: /TicketApplicationMysql
+    
+spring:  jpa:    properties:      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+        format_sql: true    hibernate:      ddl-auto: update
+    show-sql: true
+      
+  datasource:    url: jdbc:mysql://aws-bs-rds.c4fcgqvgpdxj.ap-south-1.rds.amazonaws.com:3306/ticket_db
+    username: admin 
+    password: admin123
+    driver-class-name: com.mysql.jdbc.Driver
+    
